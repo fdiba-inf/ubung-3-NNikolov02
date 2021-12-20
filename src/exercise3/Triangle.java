@@ -11,42 +11,35 @@ public class Triangle {
         double b;
         double c;
         double S = 0.0;
-        double p = 0.0;
-        do {
-          a = input.nextInt();
-          b = input.nextInt();
-          c = input.nextInt();
-        if ( (a + b <= c) || (a + c <= b) || (c + b <= a) ) {
-          System.out.println("Values are not correct!");
-        } else  {
-          p = (a + b + c)/2;
-          S = Math.sqrt(p* (p - a) * (p - b) * (p - c));
-          System.out.println("Area:" + S);
-      
-          if (a == b && a == c) {
+        double P = 0.0;
+        do{
+           a = input.nextDouble();
+           b = input.nextDouble();
+           c = input.nextDouble();
+          if((a + b <= c) || (a + c <= b) || (b + c <= a)) {
+            System.out.println("Values are not correct!");
+          } else {
+          P = (a + b + c) / 2;
+          S = Math.sqrt(P * (P - a) * (P - b) * (P - c));
+          System.out.println("Area: " + S);
+          if(a == b && a == c) {
             System.out.println("Triangle: equilateral");
-          } else if (a == b && a != c){
-            System.out.println("Triangle: isosceles");
-          } else if (a == c && a != b) {
-            System.out.println("Triangle: isosceles");
-          } else if (c == b && c != a) {
+          } else if(a == b || a == c || b == c) {
             System.out.println("Triangle: isosceles");
           } else {
-            System.out.println("Triangle: scalene ");
+            System.out.println("Triangle: scalene");
           }
-           
+          }
+
+        }
+          while(a > 0 && b > 0 && c > 0);
+        
+        
           
-              
-           
-
-        }
-
-        }
-         while (a > 0 && b > 0 && c > 0);
         
     }
-}
 
+}
         
         
     
