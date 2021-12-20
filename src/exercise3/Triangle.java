@@ -22,7 +22,7 @@ public class Triangle {
           p = (a + b + c)/2;
           S = Math.sqrt(p* (p - a) * (p - b) * (p - c));
           System.out.println("Area:" + S);
-        }
+      
           if (a == b && a == c) {
             System.out.println("Triangle: equilateral");
           } else if (a == b && a != c){
@@ -39,7 +39,7 @@ public class Triangle {
               
            
 
-
+        }
 
         }
          while (a > 0 && b > 0 && c > 0);

@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "src/exercise3/PrimeNumber.java": [
+      {
+        "id": "7cec2fe1-1e2e-491e-ad32-68033c580b60",
+        "line": 23,
+        "version": 42,
+        "index": 539
+      }
+    ]
+  }
 }
