@@ -9,7 +9,8 @@ public class NamePrinter {
         Scanner input = new Scanner(System.in);
         String str = input.nextLine();
         for (int i = 0; i < str.length();i++){
-          System.out.println("*" + str.charAt(i) + "*");
+          char symbol = str.charAt(i);
+        System.out.println("* " + symbol + " *");
         }
     }
 }

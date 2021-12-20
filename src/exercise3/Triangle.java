@@ -10,8 +10,8 @@ public class Triangle {
         double a;
         double b;
         double c;
-        double S;
-        double p;
+        double S = 0.0;
+        double p = 0.0;
         do {
           a = input.nextInt();
           b = input.nextInt();
@@ -34,6 +34,7 @@ public class Triangle {
           } else {
             System.out.println("Triangle: scalene ");
           }
+           
           
               
            

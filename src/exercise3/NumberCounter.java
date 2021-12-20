@@ -9,8 +9,8 @@ public static void main(String [] args) {
   int number = input.nextInt();
   int positiveNumbers = 0;
   int negativeNumbers = 0;
-  double sum = 0;
-  double average = 0;
+  double sum = 0.0;
+  double average = 0.0;
    
    while (number != 0 ) {
     number = input.nextInt();
@@ -22,7 +22,7 @@ public static void main(String [] args) {
     sum = sum + number;
     number = input.nextInt();
    }
-   average = sum/(positiveNumbers + negativeNumbers);
+     average = sum/(positiveNumbers + negativeNumbers);
 
     System.out.println("Positive numbers" + positiveNumbers);
     System.out.println("Negative numbers" + negativeNumbers);
